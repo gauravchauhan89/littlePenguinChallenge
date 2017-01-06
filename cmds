@@ -1,0 +1,6 @@
+modinfo hello-1.ko
+sudo insmod hello.ko
+sudo rmmod hello.ko
+lsusb -v
+udevadm control --log-priority=info
+udevadm monitor

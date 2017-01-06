@@ -1,0 +1,5 @@
+sudo modprobe -r hello
+make
+sudo cp hello.ko /lib/modules/4.4.0-31-generic/
+sudo depmod
+modprobe -c | grep hello
